@@ -102,6 +102,34 @@
             box-shadow: 0 15px 40px rgba(0,0,0,0.6);
         }
 
+        /* Fallback for broken images */
+        .book-placeholder {
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, #2c4a52 0%, #1a2e33 100%);
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.6);
+        }
+
+        .book-placeholder h3 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+            color: #e8d5b7;
+        }
+
+        .book-placeholder p {
+            font-size: 1rem;
+            color: #d4a574;
+            margin-bottom: 5px;
+        }
+
         .cta-button {
             display: inline-block;
             background: linear-gradient(45deg, #8b4513, #a0522d);
@@ -373,7 +401,16 @@
             </div>
             <div class="book-cover">
                 <div class="book-3d">
-                    <img src="https://m.media-amazon.com/images/I/71Zr6yKfVyL._SY522_.jpg" alt="In The Company of Cowards Book Cover by Michael D. Mori">
+                    <!-- Replace this URL with your GitHub raw URL after uploading -->
+                    <img src="https://raw.githubusercontent.com/companyofcowards/Inthecompanyofcowardss/main/book-cover.png" 
+                         alt="In The Company of Cowards Book Cover by Michael D. Mori"
+                         onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="book-placeholder" style="display: none;">
+                        <h3>IN THE COMPANY<br>OF COWARDS</h3>
+                        <p>Bush, Rumsfeld, and Injustice at Guantanamo</p>
+                        <p style="margin-top: 20px; font-size: 0.9rem;">MICHAEL D. MORI</p>
+                        <p style="font-size: 0.8rem;">LTCOL USMC (RET)</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -450,6 +487,7 @@
                 <a href="https://www.amazon.com/Company-Cowards-Injustice-Guantanamo-Defending-ebook/dp/B086RXFF82?ref_=ast_author_mpb" class="amazon-cta" target="_blank">Order on Amazon Now</a>
                 <div style="margin-top: 30px; font-size: 1.1rem; opacity: 0.9;">
                     ✓ Instant Digital Download Available<br>
+                    ✓ Free Shipping on Physical Copies
                 </div>
             </div>
         </div>
