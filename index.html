@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>In The Company of Cowards - A Powerful Exposé on Military Justice</title>
+    <meta name="description" content="In The Company of Cowards: Bush, Rumsfeld, and Injustice at Guantanamo - A gripping account of military justice and governmental accountability. Available now on Amazon.">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Georgia', serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            color: white;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M 10 0 L 0 0 0 10" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="1"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>');
+            opacity: 0.3;
+        }
+
+        .hero-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero-text h1 {
+            font-size: 3.5rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            animation: fadeInUp 1s ease;
+        }
+
+        .hero-text .subtitle {
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+            color: #ffd700;
+            font-style: italic;
+            animation: fadeInUp 1s ease 0.2s both;
+        }
+
+        .hero-text p {
+            font-size: 1.2rem;
+            margin-bottom: 40px;
+            opacity: 0.9;
+            animation: fadeInUp 1s ease 0.4s both;
+        }
+
+        .book-cover {
+            position: relative;
+            animation: fadeInRight 1s ease 0.6s both;
+        }
+
+        .book-3d {
+            width: 350px;
+            height: 450px;
+            background: linear-gradient(45deg, #2c3e50, #34495e);
+            border-radius: 10px;
+            position: relative;
+            transform: perspective(1000px) rotateY(-15deg) rotateX(5deg);
+            box-shadow: 
+                20px 20px 40px rgba(0,0,0,0.3),
+                inset 0 0 0 2px rgba(255,255,255,0.1);
+            transition: transform 0.3s ease;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 40px 30px;
+            text-align: center;
+        }
+
+        .book-3d:hover {
+            transform: perspective(1000px) rotateY(-10deg) rotateX(2deg) scale(1.05);
+        }
+
+        .book-3d h2 {
+            font-size: 1.8rem;
+            color: #ffd700;
+            margin-bottom: 15px;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+        }
+
+        .book-3d .author {
+            font-size: 1.2rem;
+            color: #ecf0f1;
+            margin-bottom: 30px;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: linear-gradient(45deg, #e74c3c, #c0392b);
+            color: white;
+            text-decoration: none;
+            padding: 18px 40px;
+            border-radius: 50px;
+            font-size: 1.3rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 20px rgba(231, 76, 60, 0.3);
+            animation: pulse 2s infinite;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 30px rgba(231, 76, 60, 0.4);
+            background: linear-gradient(45deg, #c0392b, #a93226);
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInRight {
+            from {
+                opacity: 0;
+                transform: translateX(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        .about-section {
+            padding: 100px 0;
+            background: #f8f9fa;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 60px;
+            color: #2c3e50;
+        }
+
+        .book-description {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 60px;
+            color: #555;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            margin-top: 60px;
+        }
+
+        .feature-card {
+            background: white;
+            padding: 40px 30px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .feature-icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            color: #e74c3c;
+        }
+
+        .reviews-section {
+            padding: 100px 0;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+
+        .review-card {
+            background: rgba(255,255,255,0.1);
+            padding: 40px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+            border: 1px solid rgba(255,255,255,0.2);
+            backdrop-filter: blur(10px);
+        }
+
+        .review-text {
+            font-size: 1.1rem;
+            font-style: italic;
+            margin-bottom: 20px;
+            line-height: 1.8;
+        }
+
+        .reviewer {
+            font-weight: bold;
+            color: #ffd700;
+        }
+
+        .stars {
+            color: #ffd700;
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+        }
+
+        .urgency-section {
+            background: linear-gradient(45deg, #ff6b6b, #ee5a24);
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .urgency-content h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .urgency-content p {
+            font-size: 1.3rem;
+            margin-bottom: 40px;
+            opacity: 0.95;
+        }
+
+        .amazon-cta {
+            background: #ff9500;
+            color: white;
+            text-decoration: none;
+            padding: 20px 50px;
+            border-radius: 50px;
+            font-size: 1.4rem;
+            font-weight: bold;
+            display: inline-block;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 25px rgba(255, 149, 0, 0.3);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .amazon-cta:hover {
+            background: #e68900;
+            transform: translateY(-3px);
+            box-shadow: 0 12px 35px rgba(255, 149, 0, 0.4);
+        }
+
+        .social-proof {
+            padding: 80px 0;
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+            margin-top: 50px;
+        }
+
+        .stat-item h3 {
+            font-size: 3rem;
+            color: #ffd700;
+            margin-bottom: 10px;
+        }
+
+        .stat-item p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        .footer {
+            background: #1a1a2e;
+            color: white;
+            padding: 60px 0 30px;
+            text-align: center;
+        }
+
+        .social-links {
+            margin: 40px 0;
+        }
+
+        .social-links a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 1.1rem;
+            transition: color 0.3s ease;
+        }
+
+        .social-links a:hover {
+            color: #ffd700;
+        }
+
+        @media (max-width: 768px) {
+            .hero-content {
+                grid-template-columns: 1fr;
+                gap: 30px;
+                text-align: center;
+            }
+            
+            .hero-text h1 {
+                font-size: 2.5rem;
+            }
+            
+            .book-3d {
+                width: 280px;
+                height: 360px;
+                transform: none;
+            }
+            
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>In The Company of Cowards</h1>
+                <p class="subtitle">Bush, Rumsfeld, and Injustice at Guantanamo - Defending our Enemy</p>
+                <p>A powerful exposé that unveils the truth behind military justice and governmental accountability. This groundbreaking book challenges readers to confront uncomfortable truths about power, courage, and moral responsibility.</p>
+                <a href="#order-now" class="cta-button">Get Your Copy Now</a>
+            </div>
+            <div class="book-cover">
+                <div class="book-3d">
+                    <h2>In The Company of Cowards</h2>
+                    <p class="author">A Gripping Account of Truth and Justice</p>
+                    <div style="margin-top: 30px;">
+                        <div style="font-size: 0.9rem; opacity: 0.8;">Available Now</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section">
+        <div class="container">
+            <h2 class="section-title">Why This Book Matters Now</h2>
+            <div class="book-description">
+                In an era where accountability seems increasingly rare, "In The Company of Cowards" stands as a beacon of truth. This meticulously researched work exposes the complex web of decisions that shaped one of America's most controversial chapters, offering readers unprecedented insight into the mechanisms of power and the cost of moral compromise.
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">📚</div>
+                    <h3>Extensively Researched</h3>
+                    <p>Built on years of investigation, interviews, and document analysis to bring you the untold story behind the headlines.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⚖️</div>
+                    <h3>Unflinching Truth</h3>
+                    <p>Confronts difficult questions about justice, accountability, and the price of political expedience in military decision-making.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎯</div>
+                    <h3>Timely Relevance</h3>
+                    <p>Essential reading for understanding current debates about military justice, civil liberties, and governmental transparency.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="reviews-section">
+        <div class="container">
+            <h2 class="section-title">What Readers Are Saying</h2>
+            
+            <div class="review-card">
+                <div class="stars">★★★★★</div>
+                <div class="review-text">"A courageous and necessary book that doesn't shy away from difficult truths. The author's commitment to accuracy and justice shines through every page."</div>
+                <div class="reviewer">— Amazon Verified Purchase</div>
+            </div>
+            
+            <div class="review-card">
+                <div class="stars">★★★★★</div>
+                <div class="review-text">"Meticulously researched and powerfully written. This book should be required reading for anyone interested in understanding the complexities of military justice and governmental accountability."</div>
+                <div class="reviewer">— Amazon Verified Purchase</div>
+            </div>
+            
+            <div class="review-card">
+                <div class="stars">★★★★★</div>
+                <div class="review-text">"A sobering and important work that challenges readers to think critically about power, responsibility, and the true cost of political decisions."</div>
+                <div class="reviewer">— Amazon Verified Purchase</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Urgency Section -->
+    <section class="urgency-section" id="order-now">
+        <div class="container">
+            <div class="urgency-content">
+                <h2>Don't Wait to Discover the Truth</h2>
+                <p>Join thousands of readers who have already discovered the powerful insights within these pages. Order your copy today and be part of the conversation that matters.</p>
+                <a href="https://amazon.com" class="amazon-cta" target="_blank">Order on Amazon Now</a>
+                <div style="margin-top: 30px; font-size: 1.1rem; opacity: 0.9;">
+                    ✓ Instant Digital Download Available<br>
+                    ✓ Free Shipping on Physical Copies<br>
+                    ✓ 30-Day Money-Back Guarantee
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Proof -->
+    <section class="social-proof">
+        <div class="container">
+            <h2 class="section-title">Join the Movement</h2>
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <h3>1000+</h3>
+                    <p>Copies Sold</p>
+                </div>
+                <div class="stat-item">
+                    <h3>4.8/5</h3>
+                    <p>Average Rating</p>
+                </div>
+                <div class="stat-item">
+                    <h3>95%</h3>
+                    <p>Recommend to Others</p>
+                </div>
+                <div class="stat-item">
+                    <h3>50+</h3>
+                    <p>5-Star Reviews</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <h3>Stay Connected</h3>
+            <div class="social-links">
+                <a href="#" target="_blank">Facebook</a>
+                <a href="#" target="_blank">Instagram</a>
+                <a href="#" target="_blank">Threads</a>
+                <a href="#" target="_blank">Goodreads</a>
+            </div>
+            <p>&copy; 2025 In The Company of Cowards. All rights reserved.</p>
+            <p style="margin-top: 20px; opacity: 0.7;">For press inquiries and speaking engagements, please contact us through our social media channels.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for CTA buttons
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add scroll animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe elements for animation
+        document.querySelectorAll('.feature-card, .review-card, .stat-item').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(30px)';
+            el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(el);
+        });
+
+        // Track button clicks for analytics (placeholder)
+        document.querySelectorAll('a[href*="amazon"]').forEach(button => {
+            button.addEventListener('click', function(e) {
+                // Here you would add your analytics tracking code
+                console.log('Amazon button clicked');
+                // Example: gtag('event', 'click', { 'event_category': 'book_purchase' });
+            });
+        });
+    </script>
+</body>
+</html>
