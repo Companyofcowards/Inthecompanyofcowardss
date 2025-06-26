@@ -19,7 +19,7 @@
         }
 
         .hero {
-            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            background: linear-gradient(135deg, #2c4a52 0%, #1a2e33 50%, #0d1a1d 100%);
             color: white;
             min-height: 100vh;
             display: flex;
@@ -35,8 +35,8 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M 10 0 L 0 0 0 10" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="1"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>');
-            opacity: 0.3;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M 10 0 L 0 0 0 10" fill="none" stroke="rgba(255,255,255,0.03)" stroke-width="1"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>');
+            opacity: 0.5;
         }
 
         .hero-content {
@@ -55,14 +55,15 @@
             font-size: 3.5rem;
             font-weight: bold;
             margin-bottom: 20px;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
             animation: fadeInUp 1s ease;
+            color: #e8d5b7;
         }
 
         .hero-text .subtitle {
             font-size: 1.5rem;
             margin-bottom: 30px;
-            color: #ffd700;
+            color: #d4a574;
             font-style: italic;
             animation: fadeInUp 1s ease 0.2s both;
         }
@@ -70,8 +71,9 @@
         .hero-text p {
             font-size: 1.2rem;
             margin-bottom: 40px;
-            opacity: 0.9;
+            opacity: 0.95;
             animation: fadeInUp 1s ease 0.4s both;
+            color: #f0f0f0;
         }
 
         .book-cover {
@@ -92,9 +94,17 @@
             transform: perspective(1000px) rotateY(-10deg) rotateX(2deg) scale(1.05);
         }
 
+        .book-3d img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.6);
+        }
+
         .cta-button {
             display: inline-block;
-            background: linear-gradient(45deg, #e74c3c, #c0392b);
+            background: linear-gradient(45deg, #8b4513, #a0522d);
             color: white;
             text-decoration: none;
             padding: 18px 40px;
@@ -104,14 +114,14 @@
             text-transform: uppercase;
             letter-spacing: 1px;
             transition: all 0.3s ease;
-            box-shadow: 0 8px 20px rgba(231, 76, 60, 0.3);
+            box-shadow: 0 8px 20px rgba(139, 69, 19, 0.4);
             animation: pulse 2s infinite;
         }
 
         .cta-button:hover {
             transform: translateY(-3px);
-            box-shadow: 0 12px 30px rgba(231, 76, 60, 0.4);
-            background: linear-gradient(45deg, #c0392b, #a93226);
+            box-shadow: 0 12px 30px rgba(139, 69, 19, 0.5);
+            background: linear-gradient(45deg, #a0522d, #8b4513);
         }
 
         @keyframes pulse {
@@ -143,7 +153,7 @@
 
         .about-section {
             padding: 100px 0;
-            background: #f8f9fa;
+            background: #f5f3f0;
         }
 
         .container {
@@ -156,7 +166,7 @@
             text-align: center;
             font-size: 2.5rem;
             margin-bottom: 60px;
-            color: #2c3e50;
+            color: #2c4a52;
         }
 
         .book-description {
@@ -165,7 +175,7 @@
             text-align: center;
             max-width: 800px;
             margin: 0 auto 60px;
-            color: #555;
+            color: #444;
         }
 
         .features-grid {
@@ -180,8 +190,9 @@
             padding: 40px 30px;
             border-radius: 15px;
             text-align: center;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            box-shadow: 0 10px 30px rgba(44, 74, 82, 0.1);
             transition: transform 0.3s ease;
+            border-top: 4px solid #d4a574;
         }
 
         .feature-card:hover {
@@ -191,21 +202,21 @@
         .feature-icon {
             font-size: 3rem;
             margin-bottom: 20px;
-            color: #e74c3c;
+            color: #8b4513;
         }
 
         .reviews-section {
             padding: 100px 0;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #2c4a52 0%, #1a2e33 100%);
             color: white;
         }
 
         .review-card {
-            background: rgba(255,255,255,0.1);
+            background: rgba(255,255,255,0.08);
             padding: 40px;
             border-radius: 15px;
             margin-bottom: 30px;
-            border: 1px solid rgba(255,255,255,0.2);
+            border: 1px solid rgba(212, 165, 116, 0.2);
             backdrop-filter: blur(10px);
         }
 
@@ -218,17 +229,17 @@
 
         .reviewer {
             font-weight: bold;
-            color: #ffd700;
+            color: #d4a574;
         }
 
         .stars {
-            color: #ffd700;
+            color: #d4a574;
             font-size: 1.2rem;
             margin-bottom: 15px;
         }
 
         .urgency-section {
-            background: linear-gradient(45deg, #ff6b6b, #ee5a24);
+            background: linear-gradient(45deg, #8b4513, #a0522d);
             color: white;
             padding: 80px 0;
             text-align: center;
@@ -269,7 +280,7 @@
 
         .social-proof {
             padding: 80px 0;
-            background: #2c3e50;
+            background: #2c4a52;
             color: white;
             text-align: center;
         }
@@ -283,7 +294,7 @@
 
         .stat-item h3 {
             font-size: 3rem;
-            color: #ffd700;
+            color: #d4a574;
             margin-bottom: 10px;
         }
 
@@ -293,7 +304,7 @@
         }
 
         .footer {
-            background: #1a1a2e;
+            background: #1a2e33;
             color: white;
             padding: 60px 0 30px;
             text-align: center;
@@ -309,10 +320,22 @@
             margin: 0 20px;
             font-size: 1.1rem;
             transition: color 0.3s ease;
+            padding: 10px 15px;
+            border-radius: 25px;
+            background: rgba(212, 165, 116, 0.1);
         }
 
         .social-links a:hover {
-            color: #ffd700;
+            color: #d4a574;
+            background: rgba(212, 165, 116, 0.2);
+        }
+
+        /* Military-inspired decorative elements */
+        .section-divider {
+            height: 2px;
+            background: linear-gradient(90deg, transparent, #d4a574, transparent);
+            margin: 40px auto;
+            width: 100px;
         }
 
         @media (max-width: 768px) {
@@ -344,13 +367,13 @@
         <div class="hero-content">
             <div class="hero-text">
                 <h1>In The Company of Cowards</h1>
-                <p class="subtitle">Bush, Rumsfeld, and Injustice at Guantanamo - Defending our Enemy</p>
-                <p>A powerful exposé that unveils the truth behind military justice and governmental accountability. This groundbreaking book challenges readers to confront uncomfortable truths about power, courage, and moral responsibility.</p>
+                <p class="subtitle">Bush, Rumsfeld, and Injustice at Guantanamo</p>
+                <p>A powerful exposé that unveils the truth behind military justice and governmental accountability. This groundbreaking book challenges readers to confront uncomfortable truths about power, courage, and moral responsibility in the David Hicks case.</p>
                 <a href="https://www.amazon.com/Company-Cowards-Injustice-Guantanamo-Defending-ebook/dp/B086RXFF82?ref_=ast_author_mpb" class="cta-button" target="_blank">Get Your Copy Now</a>
             </div>
             <div class="book-cover">
                 <div class="book-3d">
-                    <img src="https://m.media-amazon.com/images/I/71Zr6yKfVyL._SY522_.jpg" alt="In The Company of Cowards Book Cover" style="width: 100%; height: 100%; object-fit: cover; border-radius: 10px; box-shadow: 0 10px 30px rgba(0,0,0,0.4);">
+                    <img src="https://m.media-amazon.com/images/I/71Zr6yKfVyL._SY522_.jpg" alt="In The Company of Cowards Book Cover by Michael D. Mori">
                 </div>
             </div>
         </div>
@@ -360,20 +383,21 @@
     <section class="about-section">
         <div class="container">
             <h2 class="section-title">Why This Book Matters Now</h2>
+            <div class="section-divider"></div>
             <div class="book-description">
-                <strong>"What happened at Guantanamo Bay was completely outside the usual checks and balances in civil courts and traditional military tribunals."</strong> This meticulously researched exposé by Lieutenant Colonel Michael D. Mori (Ret.) reveals the David Hicks case - not one of 'who done it' but more 'what was the crime.' A powerful account that challenges readers to confront uncomfortable truths about military justice, governmental accountability, and the intersection between politics and people with experience in public policy.
+                <strong>"What happened at Guantanamo Bay was completely outside the usual checks and balances in civil courts and traditional military tribunals."</strong> This meticulously researched exposé by Lieutenant Colonel Michael D. Mori (Ret.) reveals the David Hicks case - not one of 'who done it' but more 'what was the crime.' A powerful account that challenges readers to confront uncomfortable truths about military justice and governmental accountability.
             </div>
             
             <div class="features-grid">
                 <div class="feature-card">
                     <div class="feature-icon">⚖️</div>
                     <h3>Personal Transformation</h3>
-                    <p>"A lot of young men who reach a point of crisis yearn for some drastic change." - Michael D. Mori. Explore how injustice impacts individuals and systems.</p>
+                    <p>"A lot of young men who reach a point of crisis yearn for some drastic change." - Michael D. Mori. Explore how injustice impacts individuals and systems in this deeply personal account.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">🎯</div>
                     <h3>Insider's Perspective</h3>
-                    <p>Lieutenant Colonel Michael D. Mori (Ret.) provides unprecedented access to the Military Commissions and the David Hicks case from someone who was there.</p>
+                    <p>Lieutenant Colonel Michael D. Mori (Ret.) provides unprecedented access to the Military Commissions and the David Hicks case from someone who was there defending our enemy.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">📚</div>
@@ -388,6 +412,7 @@
     <section class="reviews-section">
         <div class="container">
             <h2 class="section-title">What Readers Are Saying</h2>
+            <div class="section-divider"></div>
             
             <div class="review-card">
                 <div class="stars">★★★★★</div>
@@ -420,12 +445,12 @@
         <div class="container">
             <div class="urgency-content">
                 <h2>Discover the Truth Behind the Headlines</h2>
+                <div class="section-divider"></div>
                 <p>Join readers worldwide who have discovered the powerful insights within these pages. As one reviewer noted: "5.0 out of 5 stars and acted with the best will in the world to do what was right." Don't wait to understand this critical chapter in military justice history.</p>
                 <a href="https://www.amazon.com/Company-Cowards-Injustice-Guantanamo-Defending-ebook/dp/B086RXFF82?ref_=ast_author_mpb" class="amazon-cta" target="_blank">Order on Amazon Now</a>
                 <div style="margin-top: 30px; font-size: 1.1rem; opacity: 0.9;">
                     ✓ Instant Digital Download Available<br>
-                    ✓ Free Shipping on Physical Copies<br>
-                    ✓ 30-Day Money-Back Guarantee
+                    ✓ Free Shipping on Physical Copies
                 </div>
             </div>
         </div>
@@ -435,6 +460,7 @@
     <section class="social-proof">
         <div class="container">
             <h2 class="section-title">Join the Movement</h2>
+            <div class="section-divider"></div>
             <div class="stats-grid">
                 <div class="stat-item">
                     <h3>1000+</h3>
@@ -460,11 +486,12 @@
     <footer class="footer">
         <div class="container">
             <h3>Stay Connected</h3>
+            <div class="section-divider"></div>
             <div class="social-links">
-                <a href="#" target="_blank">Facebook</a>
-                <a href="#" target="_blank">Instagram</a>
-                <a href="#" target="_blank">Threads</a>
-                <a href="#" target="_blank">Goodreads</a>
+                <a href="https://www.facebook.com/people/In-The-Company-of-Cowards-Defending-our-Enemy/61576264300296/" target="_blank">Facebook</a>
+                <a href="https://www.instagram.com/companyofcowards/" target="_blank">Instagram</a>
+                <a href="https://www.threads.com/@companyofcowards" target="_blank">Threads</a>
+                <a href="https://www.goodreads.com/book/show/52915851-in-the-company-of-cowards" target="_blank">Goodreads</a>
             </div>
             <p>&copy; 2025 In The Company of Cowards. All rights reserved.</p>
             <p style="margin-top: 20px; opacity: 0.7;">For press inquiries and speaking engagements, please contact us through our social media channels.</p>
@@ -517,6 +544,10 @@
                 // Example: gtag('event', 'click', { 'event_category': 'book_purchase', 'event_label': 'amazon_link' });
             });
         });
+
+        // Preload the book cover image for better performance
+        const bookImage = new Image();
+        bookImage.src = 'https://m.media-amazon.com/images/I/71Zr6yKfVyL._SY522_.jpg';
     </script>
 </body>
 </html>
